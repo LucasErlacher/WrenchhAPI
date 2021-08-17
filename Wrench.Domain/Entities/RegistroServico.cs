@@ -8,6 +8,6 @@ namespace Wrench.Domain.Entities
         public EstadoServico Estado { get; set; }
         public int IdDemanda { get; set; }
 
-        public Demanda Demanda { get; set; }
+        public virtual Demanda Demanda { get; set; }
     }
 }

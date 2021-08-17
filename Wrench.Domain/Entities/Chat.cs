@@ -10,6 +10,6 @@ namespace Wrench.Domain.Entities
         public DateTime CriadoEm { get; set; }
         public bool Ativo { get; set; }
 
-        public ICollection<ChatConversa> Mensagens { get; set; }
+        public virtual ICollection<ChatConversa> Mensagens { get; set; }
     }
 }

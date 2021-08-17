@@ -1,4 +1,5 @@
 ﻿using System;
+using Wrench.Domain.Entities.Identity;
 
 namespace Wrench.Domain.Entities
 {
@@ -11,6 +12,8 @@ namespace Wrench.Domain.Entities
         public string Mensagem { get; set; }
         public DateTime EnviadoEm { get; set; }
 
-        public Chat Chat { get; set; }
+        public virtual Chat Chat { get; set; }
+        public virtual AppUser UserDe { get; set; }
+        public virtual AppUser UserPara { get; set; }
     }
 }

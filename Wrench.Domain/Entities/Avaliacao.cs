@@ -1,4 +1,5 @@
 ﻿using System;
+using Wrench.Domain.Entities.Identity;
 
 namespace Wrench.Domain.Entities
 {
@@ -10,6 +11,7 @@ namespace Wrench.Domain.Entities
         public int Nota { get; set; }
         public DateTime EnviadoEm { get; set; }
 
-        public RegistroServico RegistroServico { get; set; }
+        public virtual RegistroServico RegistroServico { get; set; }
+        public virtual AppUser Usuario { get; set; }
     }
 }

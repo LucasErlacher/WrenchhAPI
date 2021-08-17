@@ -1,4 +1,5 @@
 ﻿using System;
+using Wrench.Domain.Entities.Identity;
 using Wrench.Domain.Enum;
 
 namespace Wrench.Domain.Entities
@@ -11,6 +12,6 @@ namespace Wrench.Domain.Entities
         public Guid DemandanteId { get; set; }
         public EstadoDemanda Estado { get; set; }
 
-        //public IdentityUser Demandante { get; set; }
+        public virtual AppUser Demandante { get; set; }
     }
 }
